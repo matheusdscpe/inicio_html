@@ -1,0 +1,119 @@
+<!DOCTYPE PHP>
+<PHP lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+    <h1>Preencha os campos</h1>
+    <p>FULLSTACK</p>
+    <h3>* Campos Obrigarorios</h3> 
+    <div id="Nome">
+        <label for="Nome">Nome:</label>
+        <input type="text" name="Primeironome" id="primeiro-nome" placeholder="Primeiro*">
+        <input type="text" name="Ultimonome" id="ultimo-nome" placeholder="Ultimo*">
+    </div><br>
+
+    <div id="email">
+        <label for="email">Email:</label>
+        <input type="email" name="emailprincipal" id="email-principal" placeholder="Email Principal*">
+        <input type="email" name="emaildesegurança" id="email-de-segurança" placeholder="Email de Segurança" required="false">
+    </div><br>
+
+    <div id="Estado">
+        <label for="Estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option  value = " AC " > Acre </option>
+                <option  value = " AL " > Alagoas </option>
+                <option  value = " AP " > Amapá </option>
+                <option  value = " AM " > Amazonas </option>
+                <option  value = " BA " > Bahia </option>
+                <option  value = " CE " > Ceará </option>
+                <option  value = " DF " > Distrito Federal </option>
+                <option  value = " ES " > Espírito Santo </option>
+                <option  value = " GO " > Goiás </option>
+                <option  value = " MA " > Maranhão </option>
+                <option  value = " MT " > Mato Grosso </option>
+                <option  value = " MS " > Mato Grosso do Sul </option>
+                <option  value = " MG " > Minas Gerais </option>
+                <option  value = " PA " > Pará </option>
+                <option  value = " PB " > Paraíba </option>
+                <option  value = " PR " > Paraná </option>
+                <option  value = " PE " > Pernambuco </option>
+                <option  value = " PI " > Piauí </option>
+                <option  value = " RJ " > Rio de Janeiro </option>
+                <option  value = " RN " > Rio Grande do Norte </option>
+                <option  value = " RS " > Rio Grande do Sul </option>
+                <option  value = " RO " > Rondônia </option>
+                <option  value = " RR " > Roraima </option>
+                <option  value = " SC " > Santa Catarina </option>
+                <option  value = " SP " > São Paulo </option>
+                <option  value = " SE " > Sergipe </option>
+                <option  value = " TO " > Tocantins </option>
+                <option  value = " EX " > Estrangeiro </option>
+            </select>
+    </div><br>
+
+    <div id="Experiências">
+        <h2>Experiências:</h2>
+        <input type="checkbox" name="html" id="html">
+        <label for="html">HTML</label>
+        <br>
+        <input type="checkbox" name="css" id="css">
+        <label for="css">CSS</label>
+        <br>
+        <input type="checkbox" name="javascript" id="javascript">
+        <label for="javascript">Javascript</label>
+        <br>
+        <input type="checkbox" name="react" id="react">
+        <label for="react">React</label>
+        <br>
+        <input type="checkbox" name="vue" id="vue">
+        <label for="vue">Vue</label>
+        <br>
+        <input type="checkbox" name="php" id="php">
+        <label for="php">PHP</label>
+        <br>
+        <input type="checkbox" name="python" id="python">
+        <label for="python">Python</label>
+        <br>
+        <input type="checkbox" name="ruby" id="Ruby">
+        <label for="ruby">Sem Experiência</label>
+        <br>
+        <input type="checkbox" name="outraslinguagens" id="outros">  
+        <label for="outros">Outros:</label>
+        <br>  
+        <textarea name="Outras Experiências" id="outras-experiencias" cols="30" rows="10"></textarea>
+        <br>
+    </div><br>
+
+    <div id="disponibilidadedehorario"> 
+        <h2>Disponibilidade:</h2>
+            <select name="disponibilidade" id="disponibilidade" required>
+                <option value="matutino">Matutino</option>
+                <option value="vespertino">Vespertino</option>
+                <option value="integral">Integral</option>
+            </select>
+    </div>
+
+    <div id="data-para-entrevista">
+        <h2>Data Para Entrevista:</h2>
+        <input type="date" name="data para entrevista" id="data-para-entrevista" value="2021-09-27" min="2021-09-27" max="2021-09-30">
+    </div>
+
+    <div id="portifolio github">
+        <h2>Portifolio Github</h2>
+        <input type="url" name="link github" id="link-github" required value="https://github.com/">
+    </div><br>
+
+    <div id="Botoes">
+    <input type="reset" value="Limpar" name="Limpar campos">
+    <input type="submit" value="Voltar" name="voltar pagina" id="voltar-pagina" formaction="boasvindas.html" disabled><!--desabilitei pq teria q usar o input button porém sem js não faz diferença-->
+    <input type="submit" value="Proximo" name="proxima pagina" formaction="">
+    </div>
+</form>    
+</body>
+</html>
