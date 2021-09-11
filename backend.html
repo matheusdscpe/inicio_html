@@ -13,14 +13,14 @@
     <h3>* Campos Obrigarorios</h3> 
     <div id="Nome">
         <label for="Nome">Nome:</label>
-        <input type="text" name="Primeironome" id="primeiro-nome" placeholder="Primeiro*">
-        <input type="text" name="Ultimonome" id="ultimo-nome" placeholder="Ultimo*">
+        <input type="text" name="primeiroNome" id="primeiro-nome" placeholder="Primeiro*">
+        <input type="text" name="ultimoNome" id="ultimo-nome" placeholder="Ultimo*">
     </div><br>
 
     <div id="email">
         <label for="email">Email:</label>
-        <input type="email" name="emailprincipal" id="email-principal" placeholder="Email Principal*">
-        <input type="email" name="emaildesegurança" id="email-de-segurança" placeholder="Email de Segurança" required="false">
+        <input type="email" name="emailPrincipal" id="email-principal" placeholder="Email Principal*">
+        <input type="email" name="emailDeSegurança" id="email-de-segurança" placeholder="Email de Segurança" required="false">
     </div><br>
 
     <div id="Estado">
@@ -68,17 +68,17 @@
         <input type="checkbox" name="ruby" id="Ruby">
         <label for="ruby">Ruby</label>
         <br>
-        <input type="checkbox" name="semexperiencia" id="sem-experiencia">  
+        <input type="checkbox" name="semExperiencia" id="sem-experiencia">  
         <label for="sem-experiencia">Sem Experiência</label>
         <br>
-        <input type="checkbox" name="outraslinguagens" id="outros">  
+        <input type="checkbox" name="outrasLinguagens" id="outros">  
         <label for="outros">Outros:</label>
         <br>  
-        <textarea name="Outras Experiências" id="outras-experiencias" cols="30" rows="10"></textarea>
+        <textarea name="outrasExperiências" id="outras-experiencias" cols="30" rows="10"></textarea>
         <br>
     </div><br>
 
-    <div id="disponibilidadedehorario"> 
+    <div id="disponibilidade"> 
         <h2>Disponibilidade:</h2>
             <select name="disponibilidade" id="disponibilidade" required>
                 <option value="matutino">Matutino</option>
@@ -89,18 +89,18 @@
 
     <div id="data-para-entrevista">
         <h2>Data Para Entrevista:</h2>
-        <input type="date" name="data para entrevista" id="data-para-entrevista" value="2021-09-27" min="2021-09-27" max="2021-09-30">
+        <input type="date" name="dataParaEntrevista" id="data-para-entrevista" value="2021-09-27" min="2021-09-27" max="2021-09-30">
     </div>
 
     <div id="portifolio github">
         <h2>Portifolio Github</h2>
-        <input type="url" name="link github" id="link-github" required value="https://github.com/">
+        <input type="url" name="linkGithub" id="link-github" required value="https://github.com/">
     </div>
 
     <div id="Botoes">
-        <input type="reset" value="Limpar" name="Limpar campos">
-        <input type="submit" value="Voltar" name="voltar pagina" id="voltar-pagina" formaction="boasvindas.html" disabled><!--desabilitei pq teria q usar o input button porém sem js não faz diferença-->
-        <input type="submit" value="Proximo" name="proxima pagina" formaction="final.html">
+        <input type="reset" value="Limpar" name="LimparCampos">
+        <input type="submit" value="Voltar" name="voltarPagina" id="voltar-pagina" formaction="boasvindas.html" disabled><!--desabilitei pq teria q usar o input button porém sem js não faz diferença-->
+        <input type="submit" value="Proximo" name="proximaPagina" formaction="final.html">
         </div>
     </form>    
     </body>
